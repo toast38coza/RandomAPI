@@ -1,1 +1,1 @@
-hug -f api.py
+web: hug -f api.py
