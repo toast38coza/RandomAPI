@@ -88,7 +88,7 @@ def api(response, status:hug.types.number=0, wait:hug.types.number=0):
         status = 200
         # 1 in 5 likihood of non-200 response
         if random.choice(range(0,5)) == 0:
-            status = random.choice(STATUS_CODES.keys())
+            status = random.choice(list(STATUS_CODES))
 
     status_result = STATUS_CODES.get(status)
 
